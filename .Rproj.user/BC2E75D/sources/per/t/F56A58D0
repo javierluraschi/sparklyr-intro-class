@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1496935115353.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "34868301",
+    "id" : "F56A58D0",
+    "lastKnownWriteTime" : 1496938074,
+    "last_content_update" : 1496938074365,
+    "path" : "~/RStudio/rstudio-other/cognitive-festival-2017/styles/reveal.css",
+    "project_path" : "styles/reveal.css",
+    "properties" : {
+        "cursorPosition" : "110,31",
+        "scrollLine" : "92"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "css"
+}

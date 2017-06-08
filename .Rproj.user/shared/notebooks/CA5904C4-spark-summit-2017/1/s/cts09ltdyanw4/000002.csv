@@ -1,0 +1,51 @@
+"0","options(rsparkling.sparklingwater.version = ""1.6.8"")"
+"0","library(rsparkling)"
+"0","library(sparklyr)"
+"0","library(dplyr)"
+"2","
+Attaching package: ‘dplyr’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+"
+"0","library(h2o)"
+"2","
+----------------------------------------------------------------------
+
+Your next step is to start H2O:
+    > h2o.init()
+
+For H2O package documentation, ask for help:
+    > ??h2o
+
+After starting H2O, you can use the Web UI at http://localhost:54321
+For more information visit http://docs.h2o.ai
+
+----------------------------------------------------------------------
+
+"
+"2","
+Attaching package: ‘h2o’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    cor, sd, var
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    &&, %*%, %in%, ||, apply, as.factor, as.numeric, colnames, colnames<-, ifelse, is.character, is.factor,
+    is.numeric, log, log10, log1p, log2, round, signif, trunc
+
+"
+"0","sc <- spark_connect(master = ""local"")"
+"0","flights_tbl <- copy_to(sc, nycflights13::flights, ""flights"")"

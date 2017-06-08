@@ -1,0 +1,3 @@
+"0","compile_package_jars()                  # Compile Scala code"
+"2","Error: No root directory found in /Users/javierluraschi/RStudio/rstudio-other/spark-summit-2017 or its parent directories. Root criterion: contains a file `DESCRIPTION` with contents matching `^Package: `
+"

@@ -1,0 +1,3 @@
+"0","spark_apply(highschool_tbl, function(x) {"
+"0","  paste(""Year"", x$year - 1900)"
+"0","}, names = ""year_name"")"

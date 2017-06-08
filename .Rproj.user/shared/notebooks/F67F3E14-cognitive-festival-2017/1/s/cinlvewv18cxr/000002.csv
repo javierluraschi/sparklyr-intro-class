@@ -1,0 +1,7 @@
+"0","spark_install()                         # Install Apache Spark"
+"2","Spark 1.6.2 for Hadoop 2.6 or later already installed.
+"
+"0","sc <- spark_connect(master = ""master"")  # Connect to local instance"
+"2","Error in shell_connection(master = master, spark_home = spark_home, app_name = app_name,  : 
+  Failed to connect to Spark (SPARK_HOME is not set).
+"

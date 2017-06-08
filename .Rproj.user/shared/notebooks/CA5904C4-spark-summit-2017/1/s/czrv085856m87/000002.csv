@@ -1,0 +1,82 @@
+"0","library(sparkinstall)"
+"2","
+Attaching package: ‘sparkinstall’
+
+"
+"2","The following objects are masked from ‘package:sparklyr’:
+
+    spark_available_versions, spark_default_version, spark_install, spark_install_dir, spark_install_tar,
+    spark_installed_versions, spark_uninstall
+
+"
+"0","spark_install(version = ""1.6.2"")    # Install Spark from R"
+"2","Installing Spark 1.6.2 for Hadoop 2.6 or later.
+Downloading from:
+- 'https://d3kbcqa49mib13.cloudfront.net/spark-1.6.2-bin-hadoop2.6.tgz'
+Installing to:
+- '~/spark/spark-1.6.2-bin-hadoop2.6'
+"
+"2","trying URL 'https://d3kbcqa49mib13.cloudfront.net/spark-1.6.2-bin-hadoop2.6.tgz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 278057117 bytes (265.2 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 265.2 MB
+
+"
+"2","
+"

@@ -1,0 +1,2 @@
+"0","library(DBI)"
+"0","dbGetQuery(sc, ""SELECT * FROM flights LIMIT 100"")"

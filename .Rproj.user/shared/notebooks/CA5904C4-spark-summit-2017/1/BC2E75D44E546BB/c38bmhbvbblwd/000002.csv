@@ -1,0 +1,59 @@
+"0","library(sparklygraphs)"
+"2","Loading required package: sparklyr
+"
+"0","library(sparklyr)"
+"0","library(dplyr)"
+"2","
+Attaching package: ‘dplyr’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+"
+"0","sc <- spark_connect(master = ""local"", version = ""2.1.0"")"
+"2","path[1]="""": No such file or directory"
+"0","highschool_tbl <- copy_to(sc, ggraph::highschool, ""highschool"")"
+"0","# create a table with unique vertices using dplyr"
+"0","vertices_tbl <- sdf_bind_rows("
+"0","  highschool_tbl %>% distinct(from) %>% transmute(id = from),"
+"0","  highschool_tbl %>% distinct(to) %>% transmute(id = to)"
+"0",")"
+"0","# create a table with <source, destination> edges"
+"0","edges_tbl <- highschool_tbl %>% transmute(src = from, dst = to)"
+"0","# calculate PageRank over the highschool dataset"
+"0","gf_graphframe(vertices_tbl, edges_tbl) %>%"
+"0","  gf_pagerank(reset_prob = 0.15, max_iter = 10L, source_id = ""1"")"
+"1","Call: gf_pagerank(., reset_prob = 0.15, max_iter = 10L, source_id = ""1"")
+"
+"1","
+"
+"1","Algo parameters:"
+"1","
+"
+"1","  Tolerance: "
+"1","
+"
+"1","  Reset probability: 0.15"
+"1","
+"
+"1","  Max iterations: 10"
+"1","
+"
+"1","  Source ID: 1"
+"1","
+"
+"1","
+"
+"1","Result:"
+"1","
+"
+"1","Vertices"
+"1","
+"

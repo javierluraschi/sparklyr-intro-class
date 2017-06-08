@@ -1,0 +1,13 @@
+{
+    "path" : "~/RStudio/rstudio-other/cognitive-festival-2017/images",
+    "sortOrder" : [
+        {
+            "ascending" : false,
+            "columnIndex" : 4
+        },
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
